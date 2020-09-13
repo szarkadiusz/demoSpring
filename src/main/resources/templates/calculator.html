@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Callculator page</title>
+</head>
+<body>
+<div class="container">
+
+    <form th:action="@{/calculator} "action="post">
+        Size x: <input type="number" step="1" min="1" name="sizeX">
+        Size y: <input type="number" step="1" min="1" name="sizey">
+        <input type="submit">
+
+    </form>
+
+</div>
+
+<div th:replace="pageFraments:: footer_scripts"/>
+</body>
+</html>
